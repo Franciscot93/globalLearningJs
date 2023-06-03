@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(12, 19, 79);
+    color: rgb(212, 173, 252) ;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.form-style{
+    text-align: center;
+    border: solid rgba(161, 169, 245, 0.767) 4px;
+    border-radius: 15px;
+    
+    
+    width: 600px;
+    aspect-ratio: 1/1;
+    
+    place-items: center;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(248, 245, 248, 0.973);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(248, 241, 248, 0.842);
+    box-shadow: 0px 0px 25px 5px rgba(240, 235, 240, 0.842);
+}
+
+.form-item input{
+    margin: 20px 0px;
+    width: 90%;
+    
+    
+}
