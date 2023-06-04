@@ -181,5 +181,57 @@ button:after {
   display: block;
 }
 /* mensaje de validacion password */
+.errorPassword{
+  margin-top: 3px;
+  display: none;
+}
+.errorPasswordActive{
+  margin-top: 3px;
+  display: block;
+}
+
+.itsFinePass{
+  margin-top: 3px;
+  display: none;
+}
+
+.itsFinePassActive{
+  margin-top: 3px;
+  display: block;}
 /* mensaje de validacion repeat password */
+.errorRePassword{
+  margin-top: 3px;
+  display: none;
+}
+.errorRePasswordActive{
+  margin-top: 3px;
+  display: block;
+}
+
+.itsFineRePass{
+  margin-top: 3px;
+  display: none;
+}
+
+.itsFineRePassActive{
+  margin-top: 3px;
+  display: block;}
 /* mensaje de validacion cumpleaños */
+
+.errorBirthday{
+  margin-top: 3px;
+  display: none;
+}
+.errorBirthdayActive{
+  margin-top: 3px;
+  display: block;
+}
+
+.itsFineBirdthday{
+  margin-top: 3px;
+  display: none;
+}
+
+.itsFineBirdthdayActive{
+  margin-top: 3px;
+  display: block;}
