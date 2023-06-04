@@ -8,36 +8,42 @@
     <title>Register Form</title>
   </head>
   <body>
-    <form class="form-style" >
+    <form id="registerForm" class="form-style" >
       <div class="form-item">
         <label for="nameUser">Name</label>
         <input id="nameUser" type="text" />
-        <span></span>
+        <span id="nameError" class="errorName">Error! The name only can have letters!</span>
+        <span id="nameFine" class="itsFineName">🙂👍</span>
       </div>
       <div class="form-item">
         <label for="lastNameUser">Last Name</label>
-        <input id="lastNameUser" type="text" />
-        <span></span>
+        <input id="lastNameUser" type="text" />        
+        <span id="lastNameError" class="errorLastName">Error! The Last name only can have letters!</span>
+        <span id="lastNameFine" class="itsFineLastName">🙂👍</span>
       </div>
       <div class="form-item">
         <label for="emailUser">E-mail</label>
         <input id="emailUser" type="email" />
-        <span></span>
+        <span id="emailError" class="errorEmail"></span>
+        <span id="emailFine" class="itsFineEmail">🙂👍</span>
       </div>
       <div class="form-item">
         <label for="passUser">Password</label>
         <input id="passUser" type="password" />
-        <span></span>
+        <span id="passwordError" class="errorPassword"></span>
+        <span id="passFine" class="itsFinePass">🙂👍</span>
       </div>
       <div class="form-item">
         <label for="rePassUser">Repeat Password</label>
         <input id="rePassUser" type="password" />
-        <span></span>
+        <span id="rePasswordError" class="errorRePassword"></span>
+        <span id="rePassFine" class="itsFineRePass">🙂👍</span>
       </div>
       <div class="form-item">
         <label for="birthdayUser">Birthday Date</label>
         <input id="birthdayUser" type="date" />
-        <span></span>
+        <span id="birthdayError" class="errorBirthday"></span>
+        <span id="birthdayFine" class="itsFineBirdthday">🙂👍</span>
       </div>
       <div class="checkbox-style">
         

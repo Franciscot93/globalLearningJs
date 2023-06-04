@@ -121,5 +121,65 @@ button:after {
 }
 
 
+/* mensajes de validacion nombre*/
+.errorName{
+  margin-top: 3px;
+  display: none;
+}
+.errorNameActive{
+  margin-top: 3px;
+  display: block;
+}
 
+.itsFineName{
+  margin-top: 3px;
+  display: none;
+}
 
+.itsFineNameActive{
+  margin-top: 3px;
+  display: block;
+}
+
+/* mensaje de validacion apellido*/
+.errorLastName{
+  margin-top: 3px;
+  display: none;
+}
+.errorLastNameActive{
+  margin-top: 3px;
+  display: block;
+}
+
+.itsFineLastName{
+  margin-top: 3px;
+  display: none;
+}
+
+.itsFineLastNameActive{
+  margin-top: 3px;
+  display: block;
+}
+
+/* mensaje de validacion email */
+.errorEmail{
+  margin-top: 3px;
+  display: none;
+}
+.errorEmailActive{
+  margin-top: 3px;
+  display: block;
+}
+
+.itsFineEmail{
+  margin-top: 3px;
+  display: none;
+}
+
+.itsFineEmailActive{
+  margin-top: 3px;
+  display: block;
+}
+/* mensaje de validacion password */
+/* mensaje de validacion repeat password */
+/* mensaje de validacion cumpleaños */
