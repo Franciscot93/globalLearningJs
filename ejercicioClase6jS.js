@@ -12,7 +12,9 @@ const birthdayDateUser=document.getElementById('birthdayUser');
 
 const newsletterUserOption=document.getElementById('newsletterUser');
 
+
 const registerButton=document.getElementById('buttonRegister');
+registerButton.disabled=true;
 
 const registerForm=document.getElementById('registerForm');
 
@@ -246,8 +248,6 @@ const birthdayDateUserValidation=(birthdayDateUser)=>{
     }
   })
 
-  const registerUser=()=>{
-    if (inputFields.name && inputFields.lastName && inputFields.email && inputFields.password && inputFields.confirmPassword && inputFields.ageUser) {
-      
-    }
-  }
+
+
+  
