@@ -14,6 +14,29 @@ body {
   font-weight: lighter;
 }
 
+#titleForm{
+margin: 1em auto;
+font-size: 3rem;
+letter-spacing:  2px;
+font-weight: normal;
+color:#f5beda ;
+animation: flicker 2.1s infinite alternate;
+
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f5beda,
+      0 0 82px #f5beda,
+      0 0 92px #f5beda,
+      0 0 102px #f5beda,
+      0 0 151px #f5beda;
+}
+
+
 .form-style {
   display: grid;
   place-items: center;
@@ -70,7 +93,8 @@ button {
   z-index: 0;
   border-radius: 10px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
 button:before {
@@ -122,9 +146,7 @@ button:after {
 
 
 
-.checkbox-style{
-  margin-bottom: 15px;
-}
+
 
 
 /* mensajes de validacion */
@@ -148,3 +170,79 @@ button:after {
   opacity: 1;
 }
 
+
+input[type=checkbox] {
+  display: none;
+}
+.checkbox-style{
+  margin-bottom: 2em;
+}
+.checkbox {
+  position: relative;
+  padding: 0 0 0 2em;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing:  2px;
+  cursor: pointer;
+   
+}
+.checkbox::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  content: '';
+}
+.checkbox::after {
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  transform: rotate(45deg);
+  width: 8px;
+  height: 18px;
+  border-right: 3px solid #FFF;
+  border-bottom: 3px solid #FFF;
+  filter: drop-shadow(2px 2px 2px #f5beda) drop-shadow(-2px -2px 2px #f5beda);
+  content: '';
+}
+input[type=checkbox]:checked + .checkbox {
+  text-shadow: 2px 2px 8px #f5beda,
+              -2px -2px 8px #f5beda,
+              4px 4px 10px #f5beda,
+              -4px -4px 10px #f5beda;
+}
+input[type=checkbox]:checked + .checkbox::before {
+  box-shadow: 1px 1px 10px #f5beda,
+              -1px -1px 10px #f5beda,
+              inset 1px 1px 10px #f5beda,
+              inset -1px -1px 10px #f5beda;
+}
+input[type=checkbox]:checked + .checkbox::after {
+  opacity: 1;
+}
+
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f5beda,
+      0 0 80px #f5beda,
+      0 0 90px #f5beda,
+      0 0 100px #f5beda,
+      0 0 150px #f5beda;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
