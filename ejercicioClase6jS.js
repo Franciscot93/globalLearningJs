@@ -18,7 +18,7 @@ const inputFields = {
   rePasswordUser: false,
   birthdayUser: false,
   currentAge: 0,
-  newsletterUser:false
+  newsletterUser: false,
 };
 
 const validationRules = {
@@ -98,7 +98,6 @@ const validationSystem = (input, validationRules) => {
       .getElementById(`${input.name}Error`)
       .classList.remove("errorInputActive");
     inputFields[input.name] = true;
-    
   }
   if (!inputValidation(validationRules, input)) {
     document
@@ -127,41 +126,28 @@ const validationSystem = (input, validationRules) => {
   }
 };
 
-formInputs.forEach((input) =>{
-  if(input.name==='newsletterUser'){
-    input.addEventListener('click',(e)=>{
-      if(input.checked){
-        inputFields.newsletterUser=true
-        
+formInputs.forEach((input) => {
+  if (input.name === "newsletterUser") {
+    input.addEventListener("click", (e) => {
+      if (input.checked) {
+        inputFields.newsletterUser = true;
       }
     });
   }
 
-
   input.addEventListener("keyup", (e) => {
     validationSystem(input, validationRules);
-  })
-
-}
-
-  
-);
+  });
+});
 
 const users = [];
-const registerUser = (
-  nameUser,
-  lastNameUser,
-  emailUser,
-  passwordUser,
-  
-) => {
+const registerUser = (nameUser, lastNameUser, emailUser, passwordUser) => {
   const newUser = {
     Name: nameUser.value,
     lastName: lastNameUser.value,
     email: emailUser.value,
     password: passwordUser.value,
     age: inputFields.currentAge,
-    
   };
 
   return newUser;
@@ -185,8 +171,6 @@ registerForm.addEventListener("change", (e) => {
 registerButton.addEventListener("click", (e) => {
   e.preventDefault();
   users.push(registerUser(nameUser, lastNameUser, emailUser, passwordUser));
-
-  
 });
 
 console.log(users);
