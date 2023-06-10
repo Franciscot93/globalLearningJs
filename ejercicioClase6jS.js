@@ -98,7 +98,7 @@ const validationSystem = (input, validationRules) => {
       .getElementById(`${input.name}Error`)
       .classList.remove("errorInputActive");
     inputFields[input.name] = true;
-    console.log(inputFields[input.name]);
+    
   }
   if (!inputValidation(validationRules, input)) {
     document
@@ -132,7 +132,7 @@ formInputs.forEach((input) =>{
     input.addEventListener('click',(e)=>{
       if(input.checked){
         inputFields.newsletterUser=true
-        console.log(input.name);
+        
       }
     });
   }
@@ -186,7 +186,7 @@ registerButton.addEventListener("click", (e) => {
   e.preventDefault();
   users.push(registerUser(nameUser, lastNameUser, emailUser, passwordUser));
 
-  formInputs.forEach(input=>input.value='')
+  
 });
 
 console.log(users);
