@@ -12,38 +12,162 @@ body {
     margin: 0 auto;
   }
 
+
 .container{
     display: grid;
     position: relative;
     width: 90%;
     border: 2px solid #fafafa;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     place-items: center;
+    grid-template-rows: 3fr;
     
 
 
 }
-
+section{
+    margin:1em auto;
+}
+#burguer-button{
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #fafafaa2;
+    padding: 0.4em;
+}
+.burger{
+    
+    width: 30px;
+    height: 5px;
+    background-color:#fafafa;
+    margin: 0.4em 0;
+    border-radius: 3px;
+    
+}
 
 .box{
     width: 100%;
 }
 #nav{
+    display: none;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     margin: 0 auto;
+    
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 #hero{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-#A{
+    display: none;
+    
     grid-column-start: 1;
     grid-column-end: 2;
 }
+
+#A{ 
+    display: grid;
+    place-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-items: center;
+}
+
+form{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    align-items: center;
+    
+}
+.form-element{
+    margin: 0 auto;
+    
+}
+input {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    color: #000000;}
+    
 #B{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+
+
+
+@media (width >=768px){
+    .container{
+        display: grid;
+        position: relative;
+        width: 90%;
+        border: 2px solid #fafafa;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        grid-template-rows: 4fr;
+        
+    
+    
+    }
+    .nav-element{
+        display: flex;
+        width: 15%;
+        font-size: 2rem;
+
+    }
+    
+    img{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    #burguer-button{
+        display: none;
+    }
+    #nav{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0 auto;
+        position: sticky;
+        top:0;
+        display: inline-flex;
+        justify-content: space-around;
+        background-color: #f000;
+    }
+    #hero{
+        display: block;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    #A{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #B{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:4;
+        grid-row-end: 5;
+    }
 }
